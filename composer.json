@@ -1,0 +1,46 @@
+{
+  "name": "gsu-cetloe/cetloelib-oracle-php",
+  "type": "library",
+  "homepage": "https://github.com/GSU-CETLOE/cetloelib-oracle-php",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Melody Kimball",
+      "role": "lead"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/GSU-CETLOE/cetloelib-oracle-php/issues",
+    "wiki": "https://github.com/GSU-CETLOE/cetloelib-oracle-php/wiki",
+    "source": "https://github.com/GSU-CETLOE/cetloelib-oracle-php"
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "require": {
+    "php": "^8.1",
+    "doctrine/dbal": "4.2.1"
+  },
+  "require-dev": {
+    "phpstan/extension-installer": "1.4.3",
+    "phpstan/phpstan": "2.1.1",
+    "phpstan/phpstan-strict-rules": "2.0.1",
+    "squizlabs/php_codesniffer": "3.11.2"
+  },
+  "config": {
+    "allow-plugins": {
+      "phpstan/extension-installer": true
+    },
+    "sort-packages": true,
+    "optimize-autoloader": true,
+    "apcu-autoloader": true
+  },
+  "autoload": {
+    "psr-4": {
+      "Oracle\\": "src/"
+    }
+  },
+  "scripts": {
+    "phpcs": "vendor/bin/phpcs",
+    "phpstan": "vendor/bin/phpstan analyse -c phpstan.neon"
+  }
+}
