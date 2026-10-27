@@ -16,12 +16,13 @@ A small PHP library for talking to Oracle through the oci8 extension. It has two
 
 Install Composer if you don't have it yet. Instructions are at https://getcomposer.org/.
 
-The package isn't on Packagist, so point Composer at the GitHub repository before requiring it:
+Add the package to your project from Packagist:
 
 ```sh
-composer config repositories.cetloe-oracle vcs https://github.com/GSU-CETLOE/cetloelib-oracle-php
-composer require gsu-cetloe/cetloelib-oracle-php:dev-main
+composer require gsu-cetloe/cetloelib-oracle-php
 ```
+
+Until the first tagged release exists, Packagist only has `dev-main`. A project with Composer's default stability settings needs `composer require gsu-cetloe/cetloelib-oracle-php:dev-main` instead.
 
 To work on the library itself:
 
